@@ -4,4 +4,4 @@
 * Make your feature addition or bug fix in a feature branch. (Include a description of your changes)
 * Push your feature branch to GitHub.
 * Send a [Pull Request](https://help.github.com/articles/using-pull-requests).
-* Increment the ruby-style-guide version number (i.e. line 3 in **ruby-style-guide.gemspec**)
+* Increment the ruby-style-guide version number (i.e. update [**spec.version** in *ruby-style-guide.gemspec*](./ruby-style-guide.gemspec))

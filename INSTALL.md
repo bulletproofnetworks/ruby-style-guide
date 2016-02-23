@@ -15,7 +15,7 @@ inherit_gem:
 ```
 
 ###### NOTE
-Inheritance from gems in rubocop requires version **0.35**. When running *bundle install* ensure that the version of the rubocop gem is up to date.
+Inheritance from gems in rubocop requires a minimum of version **0.35**. When running *bundle install* ensure that the version of the rubocop gem is up to date.
 
 Alternatively you can set this in the **Gemfile** like so...
 
@@ -24,3 +24,19 @@ gem 'rubocop', '> 0.35'
 ```
 
 Be sure to run a *bundle install* on the repo to cache the ruby-style-guide locally.
+
+### Atom configuration
+If you are using [github's Atom IDE](https://atom.io), on the fly linting can be configured by installing the [linter](https://atom.io/packages/linter) and [linter-rubocop](https://atom.io/packages/linter-rubocop)
+
+```bash
+gem install rubocop
+apm install linter
+apm install linter-rubocop
+```
+
+In *~/.atom/config.cson* specify the absolute path of your **rubocop** executable. For mac users that have a rbenv environment use the following to ensure the linter uses the appropriate executable for the ruby version currently in use.
+
+```yaml
+'linter-rubocop':
+  'executablePath': /Users/[MYUSERNAME]/.rbenv/shims/rubocop
+```

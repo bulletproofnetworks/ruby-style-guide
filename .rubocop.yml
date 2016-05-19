@@ -2,10 +2,6 @@
 HashSyntax:
   EnforcedStyle: hash_rockets
 
-# Enforce spaces within Braces
-Style/SpaceInsideHashLiteralBraces:
-  EnforcedStyle: space
-
 # Numbers with underscores, please.
 Style/NumericLiterals:
   Enabled: true

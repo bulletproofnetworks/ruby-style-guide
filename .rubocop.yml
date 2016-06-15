@@ -29,3 +29,8 @@ Style/SpaceInsideHashLiteralBraces:
   SupportedStyles:
     - space
     - no_space
+
+# Allow empty case condition
+Style/EmptyCaseCondition:
+  Description: 'Avoid empty condition in case statements.'
+  Enabled: false
